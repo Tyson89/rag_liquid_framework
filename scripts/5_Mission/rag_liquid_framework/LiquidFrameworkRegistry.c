@@ -77,7 +77,6 @@ class LiquidFrameworkRegistry
         auto existing = m_liquids.Get(liquidType);
         if (existing && !override_existing)
         {
-            Print("[Liquid Framework] Trying to register " + name + " but " + existing.GetName(null) + " was already registered");
             return;
         }
 
@@ -90,7 +89,6 @@ class LiquidFrameworkRegistry
         auto existing = m_liquids.Get(liquidType);
         if (existing && !override_existing)
         {
-            Print("[Liquid Framework] Trying to register " + liquidDetails.GetName(null) + " but " + existing.GetName(null) + " was already registered");
             return;
         }
 
