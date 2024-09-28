@@ -1,18 +1,15 @@
-
-///
 class LiquidDetailsBase
 {
-    // Note that item could be null in some cases
     string GetName(ItemBase item)
     {
         return "";
     }
-    // Note that item could be null in some cases.
+	
     int GetColor(ItemBase item)
     {
         return 0;
     }
-}
+};
 
 class SimpleLiquidDetails : LiquidDetailsBase
 {
@@ -34,7 +31,7 @@ class SimpleLiquidDetails : LiquidDetailsBase
     {
         return m_color;
     }
-}
+};
 
 class LiquidFrameworkRegistry
 {

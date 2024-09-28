@@ -55,6 +55,7 @@ class cfgLiquidDefinitions
 		type=1;
 		displayName="$STR_cfgLiquidDefinitions_Blood_0Positive0";
 		flammability=50;
+		liquidBoilingThreshold=150;
 		class Nutrition
 		{
 			fullnessIndex=1;
@@ -70,6 +71,7 @@ class cfgLiquidDefinitions
 		type=2;
 		displayName="$STR_cfgLiquidDefinitions_Blood_0Negative0";
 		flammability=50;
+		liquidBoilingThreshold=150;
 		class Nutrition
 		{
 			fullnessIndex=1;
@@ -85,6 +87,7 @@ class cfgLiquidDefinitions
 		type=4;
 		displayName="$STR_cfgLiquidDefinitions_Blood_APositive0";
 		flammability=50;
+		liquidBoilingThreshold=150;
 		class Nutrition
 		{
 			fullnessIndex=1;
@@ -100,6 +103,7 @@ class cfgLiquidDefinitions
 		type=8;
 		displayName="$STR_cfgLiquidDefinitions_Blood_ANegative0";
 		flammability=50;
+		liquidBoilingThreshold=150;
 		class Nutrition
 		{
 			fullnessIndex=1;
@@ -115,6 +119,7 @@ class cfgLiquidDefinitions
 		type=16;
 		displayName="$STR_cfgLiquidDefinitions_Blood_BPositive0";
 		flammability=50;
+		liquidBoilingThreshold=150;
 		class Nutrition
 		{
 			fullnessIndex=1;
@@ -130,6 +135,7 @@ class cfgLiquidDefinitions
 		type=32;
 		displayName="$STR_cfgLiquidDefinitions_Blood_BNegative0";
 		flammability=50;
+		liquidBoilingThreshold=150;
 		class Nutrition
 		{
 			fullnessIndex=1;
@@ -145,6 +151,7 @@ class cfgLiquidDefinitions
 		type=64;
 		displayName="$STR_cfgLiquidDefinitions_Blood_ABPositive0";
 		flammability=50;
+		liquidBoilingThreshold=150;
 		class Nutrition
 		{
 			fullnessIndex=1;
@@ -160,6 +167,7 @@ class cfgLiquidDefinitions
 		type=128;
 		displayName="$STR_cfgLiquidDefinitions_Blood_ABNegative0";
 		flammability=50;
+		liquidBoilingThreshold=150;
 		class Nutrition
 		{
 			fullnessIndex=1;
@@ -175,6 +183,7 @@ class cfgLiquidDefinitions
 		type=256;
 		displayName="$STR_cfgLiquidDefinitions_Saline0";
 		flammability=-10;
+		liquidBoilingThreshold=999;
 		class Nutrition
 		{
 			fullnessIndex=1;
@@ -190,6 +199,9 @@ class cfgLiquidDefinitions
 		type=512;
 		displayName="$STR_cfgLiquidDefinitions_Water0";
 		flammability=-10;
+		liquidFreezeThreshold=0;
+		liquidThawThreshold=0;
+		liquidBoilingThreshold=150;
 		class Nutrition
 		{
 			fullnessIndex=1;
@@ -205,6 +217,9 @@ class cfgLiquidDefinitions
 		type=1024;
 		displayName="$STR_cfgLiquidDefinitions_RiverWater0";
 		flammability=-10;
+		liquidFreezeThreshold=0;
+		liquidThawThreshold=0;
+		liquidBoilingThreshold=150;
 		class Nutrition
 		{
 			fullnessIndex=1;
@@ -220,6 +235,7 @@ class cfgLiquidDefinitions
 		type=2048;
 		displayName="$STR_cfgLiquidDefinitions_Vodka0";
 		flammability=10;
+		liquidBoilingThreshold=999;
 		class Nutrition
 		{
 			fullnessIndex=1;
@@ -235,6 +251,9 @@ class cfgLiquidDefinitions
 		type=4096;
 		displayName="$STR_cfgLiquidDefinitions_Beer0";
 		flammability=0;
+		liquidFreezeThreshold=0;
+		liquidThawThreshold=0;
+		liquidBoilingThreshold=150;
 		class Nutrition
 		{
 			fullnessIndex=1;
@@ -250,6 +269,7 @@ class cfgLiquidDefinitions
 		type=8192;
 		displayName="$STR_cfgLiquidDefinitions_Gasoline0";
 		flammability=50;
+		liquidBoilingThreshold=999;
 		class Nutrition
 		{
 			fullnessIndex=1;
@@ -266,6 +286,7 @@ class cfgLiquidDefinitions
 		type=16384;
 		displayName="$STR_cfgLiquidDefinitions_Diesel0";
 		flammability=50;
+		liquidBoilingThreshold=999;
 		class Nutrition
 		{
 			fullnessIndex=1;
@@ -282,6 +303,7 @@ class cfgLiquidDefinitions
 		type=32768;
 		displayName="$STR_cfgLiquidDefinitions_Disinfectant0";
 		flammability=10;
+		liquidBoilingThreshold=999;
 		class Nutrition
 		{
 			fullnessIndex=1;
@@ -298,6 +320,9 @@ class cfgLiquidDefinitions
 		type=65536;
 		displayName="Milk";
 		flammability=-10;
+		liquidFreezeThreshold=0;
+		liquidThawThreshold=0;
+		liquidBoilingThreshold=150;
 		class Nutrition
 		{
 			fullnessIndex=1;
@@ -313,6 +338,9 @@ class cfgLiquidDefinitions
 		type=131072;
 		displayName="Honey";
 		flammability=-10;
+		liquidFreezeThreshold=0;
+		liquidThawThreshold=0;
+		liquidBoilingThreshold=150;
 		class Nutrition
 		{
 			fullnessIndex=1;
@@ -328,6 +356,9 @@ class cfgLiquidDefinitions
 		type=262144;
 		displayName="HoneyWine";
 		flammability=5;
+		liquidFreezeThreshold=0;
+		liquidThawThreshold=0;
+		liquidBoilingThreshold=150;
 		class Nutrition
 		{
 			fullnessIndex=1;
@@ -343,6 +374,9 @@ class cfgLiquidDefinitions
 		type=524288;
 		displayName="Wine";
 		flammability=5;
+		liquidFreezeThreshold=0;
+		liquidThawThreshold=0;
+		liquidBoilingThreshold=150;
 		class Nutrition
 		{
 			fullnessIndex=1;
@@ -389,6 +423,9 @@ class cfgLiquidDefinitions
 		type=4194304;
 		displayName="Espresso";
 		flammability=-10;
+		liquidFreezeThreshold=0;
+		liquidThawThreshold=0;
+		liquidBoilingThreshold=150;
 		class Nutrition
 		{
 			fullnessIndex=1;
@@ -404,6 +441,9 @@ class cfgLiquidDefinitions
 		type=8388608;
 		displayName="Coffee";
 		flammability=-10;
+		liquidFreezeThreshold=0;
+		liquidThawThreshold=0;
+		liquidBoilingThreshold=150;
 		class Nutrition
 		{
 			fullnessIndex=1;
@@ -419,6 +459,9 @@ class cfgLiquidDefinitions
 		type=16777216;
 		displayName="Tea";
 		flammability=-10;
+		liquidFreezeThreshold=0;
+		liquidThawThreshold=0;
+		liquidBoilingThreshold=150;
 		class Nutrition
 		{
 			fullnessIndex=1;
@@ -450,6 +493,9 @@ class cfgLiquidDefinitions
 		type=67108864;
 		displayName="Energy Drink";
 		flammability=-10;
+		liquidFreezeThreshold=0;
+		liquidThawThreshold=0;
+		liquidBoilingThreshold=150;
 		class Nutrition
 		{
 			fullnessIndex=1;
@@ -495,6 +541,9 @@ class cfgLiquidDefinitions
 		type=536870912;
 		displayName="Milk Coffee";
 		flammability=-10;
+		liquidFreezeThreshold=0;
+		liquidThawThreshold=0;
+		liquidBoilingThreshold=150;
 		class Nutrition
 		{
 			fullnessIndex=1;
