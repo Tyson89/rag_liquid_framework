@@ -96,7 +96,7 @@ class LiquidFrameworkRegistry
     {
         return m_liquids.Get(liquidType);
     }
-}
+};
 
 static ref LiquidFrameworkRegistry g_LiquidFrameworkRegistry;
 static ref LiquidFrameworkRegistry GetLiquidFrameworkRegistry()
@@ -107,4 +107,4 @@ static ref LiquidFrameworkRegistry GetLiquidFrameworkRegistry()
     }
 
     return g_LiquidFrameworkRegistry;
-}
+};
