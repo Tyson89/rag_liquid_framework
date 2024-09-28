@@ -2,16 +2,16 @@ modded class InspectMenuNew
 {
 	override static void UpdateItemInfoLiquidType(Widget root_widget, EntityAI item)
 	{
-		if (item.IsInherited(ZombieBase) || item.IsInherited(Car))
+		if ( item.IsInherited(ZombieBase) || item.IsInherited(Car) )
 			return;
 
 		ItemBase item_base = ItemBase.Cast(item);
 
-		if (item_base && item_base.GetQuantity() > 0 && item_base.IsBloodContainer())
+		if ( item_base && item_base.GetQuantity() > 0 && item_base.IsBloodContainer() )
 		{
 			BloodContainerBase blood_container = BloodContainerBase.Cast(item_base);
 
-			if (blood_container.GetBloodTypeVisible())
+			if ( blood_container.GetBloodTypeVisible() )
 			{
 				string type;
 				bool positive;
@@ -23,14 +23,14 @@ modded class InspectMenuNew
 				WidgetTrySetText(root_widget, "ItemLiquidTypeWidget", "#inv_inspect_blood", Colors.COLOR_LIQUID);
 			}
 		}
-		else if (item_base && item_base.GetQuantity() > 0 && item_base.IsLiquidContainer())
+		else if ( item_base && item_base.GetQuantity() > 0 && item_base.IsLiquidContainer() )
 		{
 			int liquid_type = item_base.GetLiquidType();
 
 			LiquidFrameworkRegistry registry = GetLiquidFrameworkRegistry();
-
 			LiquidDetailsBase liquid = registry.GetLiquid(liquid_type);
-			if (liquid)
+			
+			if ( liquid )
 			{
 				WidgetTrySetText(root_widget, "ItemLiquidTypeWidget", liquid.GetName(item_base), liquid.GetColor(item_base));
 			}

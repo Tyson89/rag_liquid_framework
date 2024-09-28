@@ -40,6 +40,7 @@ class LiquidFrameworkRegistry
     void LiquidFrameworkRegistry()
     {
         m_liquids = new ref map<int, ref LiquidDetailsBase>;
+		
         // Vanilla liquids
         RegisterLiquid(LIQUID_WATER, "#inv_inspect_water", Colors.COLOR_LIQUID);
         RegisterLiquid(LIQUID_RIVERWATER, "#inv_inspect_river_water", Colors.COLOR_LIQUID);
@@ -72,7 +73,8 @@ class LiquidFrameworkRegistry
     void RegisterLiquid(int liquidType, string name, int color, bool override_existing = false)
     {
         auto existing = m_liquids.Get(liquidType);
-        if (existing && !override_existing)
+		
+        if ( existing && !override_existing )
         {
             return;
         }
@@ -84,7 +86,8 @@ class LiquidFrameworkRegistry
     void RegisterLiquid(int liquidType, LiquidDetailsBase liquidDetails, bool override_existing = false)
     {
         auto existing = m_liquids.Get(liquidType);
-        if (existing && !override_existing)
+		
+        if ( existing && !override_existing )
         {
             return;
         }
@@ -101,7 +104,7 @@ class LiquidFrameworkRegistry
 static ref LiquidFrameworkRegistry g_LiquidFrameworkRegistry;
 static ref LiquidFrameworkRegistry GetLiquidFrameworkRegistry()
 {
-    if (!g_LiquidFrameworkRegistry)
+    if ( !g_LiquidFrameworkRegistry )
     {
         g_LiquidFrameworkRegistry = new ref LiquidFrameworkRegistry();
     }
