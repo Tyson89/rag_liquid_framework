@@ -15,7 +15,7 @@ class CfgMods
 {
 	class rag_liquid_framework
 	{
-		dir="\rag\rag_stuff\rag_liquid_framework";
+		dir="\rag_liquid_framework";
 		picture="";
 		action="";
 		hideName=1;
@@ -33,291 +33,26 @@ class CfgMods
 			class gameScriptModule
 			{
 				value = "";
-				files[] = {"rag/rag_stuff/rag_liquid_framework/scripts/3_Game"};
+				files[] = {"rag_liquid_framework/scripts/3_Game"};
 			};
 			class worldScriptModule
 			{
 				value = "";
-				files[] = {"rag/rag_stuff/rag_liquid_framework/scripts/4_World"};
+				files[] = {"rag_liquid_framework/scripts/4_World"};
 			};
 			class missionScriptModule
 			{
 				value = "";
-				files[] = {"rag/rag_stuff/rag_liquid_framework/scripts/5_Mission"};
+				files[] = {"rag_liquid_framework/scripts/5_Mission"};
 			};
 		};
 	};
 };
 class cfgLiquidDefinitions
 {
-	class Blood_0Positive
-	{
-		type=1;
-		displayName="$STR_cfgLiquidDefinitions_Blood_0Positive0";
-		flammability=50;
-		liquidBoilingThreshold=150;
-		class Nutrition
-		{
-			fullnessIndex=1;
-			energy=5;
-			water=30;
-			nutritionalIndex=55;
-			toxicity=0.1;
-			digestibility=2;
-		};
-	};
-	class Blood_0Negative
-	{
-		type=2;
-		displayName="$STR_cfgLiquidDefinitions_Blood_0Negative0";
-		flammability=50;
-		liquidBoilingThreshold=150;
-		class Nutrition
-		{
-			fullnessIndex=1;
-			energy=5;
-			water=30;
-			nutritionalIndex=55;
-			toxicity=0.1;
-			digestibility=2;
-		};
-	};
-	class Blood_APositive
-	{
-		type=4;
-		displayName="$STR_cfgLiquidDefinitions_Blood_APositive0";
-		flammability=50;
-		liquidBoilingThreshold=150;
-		class Nutrition
-		{
-			fullnessIndex=1;
-			energy=5;
-			water=30;
-			nutritionalIndex=55;
-			toxicity=0.1;
-			digestibility=2;
-		};
-	};
-	class Blood_ANegative
-	{
-		type=8;
-		displayName="$STR_cfgLiquidDefinitions_Blood_ANegative0";
-		flammability=50;
-		liquidBoilingThreshold=150;
-		class Nutrition
-		{
-			fullnessIndex=1;
-			energy=5;
-			water=30;
-			nutritionalIndex=55;
-			toxicity=0.1;
-			digestibility=2;
-		};
-	};
-	class Blood_BPositive
-	{
-		type=16;
-		displayName="$STR_cfgLiquidDefinitions_Blood_BPositive0";
-		flammability=50;
-		liquidBoilingThreshold=150;
-		class Nutrition
-		{
-			fullnessIndex=1;
-			energy=5;
-			water=30;
-			nutritionalIndex=55;
-			toxicity=0.1;
-			digestibility=2;
-		};
-	};
-	class Blood_BNegative
-	{
-		type=32;
-		displayName="$STR_cfgLiquidDefinitions_Blood_BNegative0";
-		flammability=50;
-		liquidBoilingThreshold=150;
-		class Nutrition
-		{
-			fullnessIndex=1;
-			energy=5;
-			water=30;
-			nutritionalIndex=55;
-			toxicity=0.1;
-			digestibility=2;
-		};
-	};
-	class Blood_ABPositive
-	{
-		type=64;
-		displayName="$STR_cfgLiquidDefinitions_Blood_ABPositive0";
-		flammability=50;
-		liquidBoilingThreshold=150;
-		class Nutrition
-		{
-			fullnessIndex=1;
-			energy=5;
-			water=30;
-			nutritionalIndex=55;
-			toxicity=0.1;
-			digestibility=2;
-		};
-	};
-	class Blood_ABNegative
-	{
-		type=128;
-		displayName="$STR_cfgLiquidDefinitions_Blood_ABNegative0";
-		flammability=50;
-		liquidBoilingThreshold=150;
-		class Nutrition
-		{
-			fullnessIndex=1;
-			energy=5;
-			water=30;
-			nutritionalIndex=55;
-			toxicity=0.1;
-			digestibility=2;
-		};
-	};
-	class Saline
-	{
-		type=256;
-		displayName="$STR_cfgLiquidDefinitions_Saline0";
-		flammability=-10;
-		liquidBoilingThreshold=999;
-		class Nutrition
-		{
-			fullnessIndex=1;
-			energy=0;
-			water=0;
-			nutritionalIndex=75;
-			toxicity=0.1;
-			digestibility=2;
-		};
-	};
-	class Water
-	{
-		type=512;
-		displayName="$STR_cfgLiquidDefinitions_Water0";
-		flammability=-10;
-		liquidFreezeThreshold=0;
-		liquidThawThreshold=0;
-		liquidBoilingThreshold=150;
-		class Nutrition
-		{
-			fullnessIndex=1;
-			energy=0;
-			water=100;
-			nutritionalIndex=75;
-			toxicity=-0.0099999998;
-			digestibility=2;
-		};
-	};
-	class RiverWater
-	{
-		type=1024;
-		displayName="$STR_cfgLiquidDefinitions_RiverWater0";
-		flammability=-10;
-		liquidFreezeThreshold=0;
-		liquidThawThreshold=0;
-		liquidBoilingThreshold=150;
-		class Nutrition
-		{
-			fullnessIndex=1;
-			energy=0;
-			water=100;
-			nutritionalIndex=75;
-			toxicity=-0.0099999998;
-			digestibility=2;
-		};
-	};
-	class Vodka
-	{
-		type=2048;
-		displayName="$STR_cfgLiquidDefinitions_Vodka0";
-		flammability=10;
-		liquidBoilingThreshold=999;
-		class Nutrition
-		{
-			fullnessIndex=1;
-			energy=231;
-			water=15;
-			nutritionalIndex=75;
-			toxicity=0.050000001;
-			digestibility=2;
-		};
-	};
-	class Beer
-	{
-		type=4096;
-		displayName="$STR_cfgLiquidDefinitions_Beer0";
-		flammability=0;
-		liquidFreezeThreshold=0;
-		liquidThawThreshold=0;
-		liquidBoilingThreshold=150;
-		class Nutrition
-		{
-			fullnessIndex=1;
-			energy=43;
-			water=100;
-			nutritionalIndex=75;
-			toxicity=0.0099999998;
-			digestibility=2;
-		};
-	};
-	class Gasoline
-	{
-		type=8192;
-		displayName="$STR_cfgLiquidDefinitions_Gasoline0";
-		flammability=50;
-		liquidBoilingThreshold=999;
-		class Nutrition
-		{
-			fullnessIndex=1;
-			energy=5;
-			water=0;
-			nutritionalIndex=75;
-			toxicity=1;
-			digestibility=2;
-			agents=16;
-		};
-	};
-	class Diesel
-	{
-		type=16384;
-		displayName="$STR_cfgLiquidDefinitions_Diesel0";
-		flammability=50;
-		liquidBoilingThreshold=999;
-		class Nutrition
-		{
-			fullnessIndex=1;
-			energy=-10;
-			water=0;
-			nutritionalIndex=75;
-			toxicity=1;
-			digestibility=2;
-			agents=16;
-		};
-	};
-	class Disinfectant
-	{
-		type=32768;
-		displayName="$STR_cfgLiquidDefinitions_Disinfectant0";
-		flammability=10;
-		liquidBoilingThreshold=999;
-		class Nutrition
-		{
-			fullnessIndex=1;
-			energy=-10;
-			water=1;
-			nutritionalIndex=55;
-			toxicity=0.30000001;
-			digestibility=2;
-			agents=16;
-		};
-	};
 	class MilkLiquid
 	{
-		type=8388608;
+		type=600;
 		displayName="Milk";
 		flammability=-10;
 		liquidFreezeThreshold=0;
@@ -335,7 +70,7 @@ class cfgLiquidDefinitions
 	};
 	class HoneyLiquid
 	{
-		type=16777216;
+		type=601;
 		displayName="Honey";
 		flammability=-10;
 		liquidFreezeThreshold=0;
@@ -353,7 +88,7 @@ class cfgLiquidDefinitions
 	};
 	class HoneyWineLiquid
 	{
-		type=33554432;
+		type=602;
 		displayName="HoneyWine";
 		flammability=5;
 		liquidBoilingThreshold=150;
@@ -369,7 +104,7 @@ class cfgLiquidDefinitions
 	};
 	class WineLiquid
 	{
-		type=67108864;
+		type=603;
 		displayName="Wine";
 		flammability=5;
 		liquidFreezeThreshold=0;
@@ -387,7 +122,7 @@ class cfgLiquidDefinitions
 	};
 	class AVGasLiquid
 	{
-		type=134217728;
+		type=604;
 		displayName="AVGas Aviation Fuel";
 		flammability=60;
 		class Nutrition
@@ -403,7 +138,7 @@ class cfgLiquidDefinitions
 	};
 	class WhiskeyLiquid
 	{
-		type=268435456;
+		type=605;
 		displayName="Whiskey";
 		flammability=30;
 		liquidBoilingThreshold=150;
@@ -419,7 +154,7 @@ class cfgLiquidDefinitions
 	};
 	class EspressoLiquid
 	{
-		type=536870912;
+		type=606;
 		displayName="Espresso";
 		flammability=-10;
 		liquidFreezeThreshold=0;
@@ -437,7 +172,7 @@ class cfgLiquidDefinitions
 	};
 	class CoffeeLiquid
 	{
-		type=1073741824;
+		type=607;
 		displayName="Coffee";
 		flammability=-10;
 		liquidFreezeThreshold=0;
@@ -455,7 +190,7 @@ class cfgLiquidDefinitions
 	};
 	class TeaLiquid
 	{
-		type=2147483648;
+		type=608;
 		displayName="Tea";
 		flammability=-10;
 		liquidFreezeThreshold=0;
@@ -473,7 +208,7 @@ class cfgLiquidDefinitions
 	};
 	class EngineOilLiquid
 	{
-		type=4294967296;
+		type=609;
 		displayName="Engine Oil";
 		flammability=50;
 		class Nutrition
@@ -489,7 +224,7 @@ class cfgLiquidDefinitions
 	};
 	class EnergyDrink
 	{
-		type=8589934592;
+		type=610;
 		displayName="Energy Drink";
 		flammability=-10;
 		liquidFreezeThreshold=0;
@@ -507,7 +242,7 @@ class cfgLiquidDefinitions
 	};
 	class Virus
 	{
-		type=17179869184;
+		type=611;
 		displayName="Virus";
 		flammability=-10;
 		class Nutrition
@@ -522,7 +257,7 @@ class cfgLiquidDefinitions
 	};
 	class PoisonLiquid
 	{
-		type=34359738368;
+		type=612;
 		displayName="Poison";
 		flammability=-10;
 		class Nutrition
@@ -537,7 +272,7 @@ class cfgLiquidDefinitions
 	};
 	class MilkCoffeeLiquid
 	{
-		type=68719476736;
+		type=613;
 		displayName="Milk Coffee";
 		flammability=-10;
 		liquidFreezeThreshold=0;
@@ -555,7 +290,7 @@ class cfgLiquidDefinitions
 	};
 	class AntivenomLiquid
 	{
-		type=137438953472;
+		type=614;
 		displayName="Antivenom";
 		flammability=-10;
 		class Nutrition

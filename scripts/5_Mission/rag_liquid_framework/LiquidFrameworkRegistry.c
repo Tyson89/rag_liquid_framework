@@ -39,7 +39,7 @@ class LiquidFrameworkRegistry
 
     void LiquidFrameworkRegistry()
     {
-        m_liquids = new ref map<int, ref LiquidDetailsBase>;
+		m_liquids = new ref map<int, ref LiquidDetailsBase>;
 		
         // Vanilla liquids
         RegisterLiquid(LIQUID_WATER, "#inv_inspect_water", Colors.COLOR_LIQUID);
@@ -53,7 +53,7 @@ class LiquidFrameworkRegistry
         RegisterLiquid(LIQUID_SOLUTION, "#inv_inspect_solution", Colors.COLOR_LIQUID);
 		
 		#ifdef DAYZ_1_26
-		RegisterLiquid(LIQUID_SNOW, "Snow", Colors.COLOR_LIQUID);
+		RegisterLiquid(LIQUID_SNOW, "SNOW", Colors.COLOR_LIQUID);
 		RegisterLiquid(LIQUID_SALTWATER, "#inv_inspect_water", Colors.COLOR_LIQUID);
 		RegisterLiquid(LIQUID_FRESHWATER, "#inv_inspect_water", Colors.COLOR_LIQUID);
 		RegisterLiquid(LIQUID_STILLWATER, "#inv_inspect_water", Colors.COLOR_LIQUID);
@@ -77,7 +77,14 @@ class LiquidFrameworkRegistry
         RegisterLiquid(LIQUID_POISON, "POISON", Colors.POISONLIQUID);
         RegisterLiquid(LIQUID_MILKCOFFEE, "MILKCOFFEE", Colors.MILKCOFFEELIQUID);
         RegisterLiquid(LIQUID_ANTIVENOM, "ANTIVENOM", Colors.ANTIVENOMLIQUID);
+		
+		RegisterCustomLiquids();
     }
+	
+	void RegisterCustomLiquids()
+	{
+		// register custom liquids here. Don't forget to call super!
+	}
 
     // Other custom liquids can be registered.
     void RegisterLiquid(int liquidType, string name, int color, bool override_existing = false)
