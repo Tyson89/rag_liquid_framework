@@ -1,6 +1,6 @@
 modded class Colors
 {
-	const int RED					= 0xFF0000;
+	/*const int RED					= 0xFF0000;
 	const int CYAN					= 0x00FFFF;
 	const int GRAY					= 0xBEBEBE;
 	const int GREEN					= 0x00FF00;
@@ -61,7 +61,7 @@ modded class Colors
 	
 	const int COLOR_FROSTLINE_LIGHT_BLUE = 0xff90b2bf;
 	const int COLOR_FROSTLINE_MOUNTAIN_BLUE = 0xff365d6e;
-	const int COLOR_FROSTLINE_DARK_BLUE = 0xff0d1c21;
+	const int COLOR_FROSTLINE_DARK_BLUE = 0xff0d1c21;*/
 	
 	// Custom added
 	const int COLOR_GASOLINE		= 0xE6E6B9;

@@ -317,7 +317,7 @@ class cfgLiquidDefinitions
 	};
 	class MilkLiquid
 	{
-		type=65536;
+		type=8388608;
 		displayName="Milk";
 		flammability=-10;
 		liquidFreezeThreshold=0;
@@ -335,7 +335,7 @@ class cfgLiquidDefinitions
 	};
 	class HoneyLiquid
 	{
-		type=131072;
+		type=16777216;
 		displayName="Honey";
 		flammability=-10;
 		liquidFreezeThreshold=0;
@@ -353,11 +353,9 @@ class cfgLiquidDefinitions
 	};
 	class HoneyWineLiquid
 	{
-		type=262144;
+		type=33554432;
 		displayName="HoneyWine";
 		flammability=5;
-		liquidFreezeThreshold=0;
-		liquidThawThreshold=0;
 		liquidBoilingThreshold=150;
 		class Nutrition
 		{
@@ -371,7 +369,7 @@ class cfgLiquidDefinitions
 	};
 	class WineLiquid
 	{
-		type=524288;
+		type=67108864;
 		displayName="Wine";
 		flammability=5;
 		liquidFreezeThreshold=0;
@@ -389,7 +387,7 @@ class cfgLiquidDefinitions
 	};
 	class AVGasLiquid
 	{
-		type=1048576;
+		type=134217728;
 		displayName="AVGas Aviation Fuel";
 		flammability=60;
 		class Nutrition
@@ -405,9 +403,10 @@ class cfgLiquidDefinitions
 	};
 	class WhiskeyLiquid
 	{
-		type=2097152;
+		type=268435456;
 		displayName="Whiskey";
 		flammability=30;
+		liquidBoilingThreshold=150;
 		class Nutrition
 		{
 			fullnessIndex=1;
@@ -420,7 +419,7 @@ class cfgLiquidDefinitions
 	};
 	class EspressoLiquid
 	{
-		type=4194304;
+		type=536870912;
 		displayName="Espresso";
 		flammability=-10;
 		liquidFreezeThreshold=0;
@@ -438,7 +437,7 @@ class cfgLiquidDefinitions
 	};
 	class CoffeeLiquid
 	{
-		type=8388608;
+		type=1073741824;
 		displayName="Coffee";
 		flammability=-10;
 		liquidFreezeThreshold=0;
@@ -456,7 +455,7 @@ class cfgLiquidDefinitions
 	};
 	class TeaLiquid
 	{
-		type=16777216;
+		type=2147483648;
 		displayName="Tea";
 		flammability=-10;
 		liquidFreezeThreshold=0;
@@ -474,7 +473,7 @@ class cfgLiquidDefinitions
 	};
 	class EngineOilLiquid
 	{
-		type=33554432;
+		type=4294967296;
 		displayName="Engine Oil";
 		flammability=50;
 		class Nutrition
@@ -490,7 +489,7 @@ class cfgLiquidDefinitions
 	};
 	class EnergyDrink
 	{
-		type=67108864;
+		type=8589934592;
 		displayName="Energy Drink";
 		flammability=-10;
 		liquidFreezeThreshold=0;
@@ -508,7 +507,7 @@ class cfgLiquidDefinitions
 	};
 	class Virus
 	{
-		type=134217728;
+		type=17179869184;
 		displayName="Virus";
 		flammability=-10;
 		class Nutrition
@@ -523,7 +522,7 @@ class cfgLiquidDefinitions
 	};
 	class PoisonLiquid
 	{
-		type=268435456;
+		type=34359738368;
 		displayName="Poison";
 		flammability=-10;
 		class Nutrition
@@ -538,7 +537,7 @@ class cfgLiquidDefinitions
 	};
 	class MilkCoffeeLiquid
 	{
-		type=536870912;
+		type=68719476736;
 		displayName="Milk Coffee";
 		flammability=-10;
 		liquidFreezeThreshold=0;
@@ -556,7 +555,7 @@ class cfgLiquidDefinitions
 	};
 	class AntivenomLiquid
 	{
-		type=1073741824;
+		type=137438953472;
 		displayName="Antivenom";
 		flammability=-10;
 		class Nutrition

@@ -50,6 +50,16 @@ class LiquidFrameworkRegistry
         RegisterLiquid(LIQUID_DIESEL, "#inv_inspect_diesel", Colors.COLOR_GASOLINE);
         RegisterLiquid(LIQUID_DISINFECTANT, "#inv_inspect_disinfectant", Colors.GRAY);
         RegisterLiquid(LIQUID_SALINE, "#inv_inspect_saline", Colors.COLOR_LIQUID);
+        RegisterLiquid(LIQUID_SOLUTION, "#inv_inspect_solution", Colors.COLOR_LIQUID);
+		
+		#ifdef DAYZ_1_26
+		RegisterLiquid(LIQUID_SNOW, "Snow", Colors.COLOR_LIQUID);
+		RegisterLiquid(LIQUID_SALTWATER, "#inv_inspect_water", Colors.COLOR_LIQUID);
+		RegisterLiquid(LIQUID_FRESHWATER, "#inv_inspect_water", Colors.COLOR_LIQUID);
+		RegisterLiquid(LIQUID_STILLWATER, "#inv_inspect_water", Colors.COLOR_LIQUID);
+		RegisterLiquid(LIQUID_HOTWATER, "#inv_inspect_water", Colors.COLOR_LIQUID);
+		RegisterLiquid(LIQUID_CLEANWATER, "#inv_inspect_water", Colors.COLOR_LIQUID);
+		#endif
 
         // Liquid framework introduced
         RegisterLiquid(LIQUID_MILK, "MILK", Colors.MILKLIQUID);
