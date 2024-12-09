@@ -125,6 +125,7 @@ class cfgLiquidDefinitions
 		type=604;
 		displayName="AVGas Aviation Fuel";
 		flammability=60;
+		liquidBoilingThreshold=999;
 		class Nutrition
 		{
 			fullnessIndex=1;
@@ -211,6 +212,7 @@ class cfgLiquidDefinitions
 		type=609;
 		displayName="Engine Oil";
 		flammability=50;
+		liquidBoilingThreshold=999;
 		class Nutrition
 		{
 			fullnessIndex=1;
@@ -245,6 +247,7 @@ class cfgLiquidDefinitions
 		type=611;
 		displayName="Virus";
 		flammability=-10;
+		liquidBoilingThreshold=999;
 		class Nutrition
 		{
 			fullnessIndex=1;
@@ -260,6 +263,7 @@ class cfgLiquidDefinitions
 		type=612;
 		displayName="Poison";
 		flammability=-10;
+		liquidBoilingThreshold=999;
 		class Nutrition
 		{
 			fullnessIndex=1;
@@ -293,6 +297,7 @@ class cfgLiquidDefinitions
 		type=614;
 		displayName="Antivenom";
 		flammability=-10;
+		liquidBoilingThreshold=999;
 		class Nutrition
 		{
 			fullnessIndex=1;
