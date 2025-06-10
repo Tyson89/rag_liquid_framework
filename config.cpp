@@ -27,7 +27,16 @@ class CfgMods
 		version="1.0";
 		extra=0;
 		type="mod";
-		dependencies[] = {"Game","World","Mission"};
+		dependencies[]=
+		{
+			"Game",
+			"World",
+			"Mission"
+		};
+		defines[]=
+		{
+			"RAG_LIQUID_FRAMEWORK"
+		};
 		class defs
 		{
 			class gameScriptModule

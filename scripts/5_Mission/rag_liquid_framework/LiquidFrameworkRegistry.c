@@ -39,7 +39,7 @@ class LiquidFrameworkRegistry
 
     void LiquidFrameworkRegistry()
     {
-		m_liquids = new ref map<int, ref LiquidDetailsBase>;
+		m_liquids = new map<int, ref LiquidDetailsBase>;
 		
         // Vanilla liquids
         RegisterLiquid(LIQUID_WATER, "#inv_inspect_water", Colors.COLOR_LIQUID);
@@ -52,14 +52,12 @@ class LiquidFrameworkRegistry
         RegisterLiquid(LIQUID_SALINE, "#inv_inspect_saline", Colors.COLOR_LIQUID);
         RegisterLiquid(LIQUID_SOLUTION, "#inv_inspect_solution", Colors.COLOR_LIQUID);
 		
-		#ifdef DAYZ_1_26
 		RegisterLiquid(LIQUID_SNOW, "SNOW", Colors.COLOR_LIQUID);
 		RegisterLiquid(LIQUID_SALTWATER, "#inv_inspect_water", Colors.COLOR_LIQUID);
 		RegisterLiquid(LIQUID_FRESHWATER, "#inv_inspect_water", Colors.COLOR_LIQUID);
 		RegisterLiquid(LIQUID_STILLWATER, "#inv_inspect_water", Colors.COLOR_LIQUID);
 		RegisterLiquid(LIQUID_HOTWATER, "#inv_inspect_water", Colors.COLOR_LIQUID);
 		RegisterLiquid(LIQUID_CLEANWATER, "#inv_inspect_water", Colors.COLOR_LIQUID);
-		#endif
 
         // Liquid framework introduced
         RegisterLiquid(LIQUID_MILK, "MILK", Colors.MILKLIQUID);
@@ -123,7 +121,7 @@ static ref LiquidFrameworkRegistry GetLiquidFrameworkRegistry()
 {
     if ( !g_LiquidFrameworkRegistry )
     {
-        g_LiquidFrameworkRegistry = new ref LiquidFrameworkRegistry();
+        g_LiquidFrameworkRegistry = new LiquidFrameworkRegistry();
     }
 
     return g_LiquidFrameworkRegistry;
