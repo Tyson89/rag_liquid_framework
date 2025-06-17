@@ -6,13 +6,12 @@ modded class ActionDrainLiquid
 		
 		if ( target_item && item )
 		{
-			if ( !RaG_Custom_Liquids.IsLiquidPowerOfTwo(target_item.GetLiquidType()) || !RaG_Custom_Liquids.IsLiquidPowerOfTwo(item.GetLiquidType()) )
+			if ( !RaG_Custom_Liquids.IsLiquidPowerOfTwoOrEmpty(target_item.GetLiquidType()) || !RaG_Custom_Liquids.IsLiquidPowerOfTwoOrEmpty(item.GetLiquidType()) )
 			{
-				//Print("[RaG_Liquid_Framework] ActionDrainLiquid:: ActionCondition:: Liquid is NOT power of 2 - use custom action");
 				return false;
 			}
 			
-			return super.ActionCondition(player, target, item);
+			else return super.ActionCondition(player, target, item);
 		}
 		return false;
 	}

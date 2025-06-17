@@ -5,6 +5,11 @@ class RaG_Custom_Liquids
 	    // zero is invalid, and only pure powers of two pass
 	    return type > 0 && (type & (type - 1)) == 0;
 	}
+	static bool IsLiquidPowerOfTwoOrEmpty(int type)
+	{
+	    // zero is invalid, and only pure powers of two pass
+	    return type >= 0 && (type & (type - 1)) == 0;
+	}
 	
 	static bool CanTransfer(ItemBase source_ent, ItemBase target_ent)
 	{
