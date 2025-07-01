@@ -6,7 +6,8 @@ modded class ActionFillBottleBase
 		
 		if ( waterCheck )
 		{
-			int liquidType = waterCheck.GetSurfaceLiquidType(target);
+			//int liquidType = waterCheck.GetSurfaceLiquidType(target);
+			int liquidType = GetLiquidType(player, target, item);
 			
 			if (item.GetQuantity() > item.GetQuantityMin())
 				liquidType = Liquid.TranslateLiquidType(liquidType);
