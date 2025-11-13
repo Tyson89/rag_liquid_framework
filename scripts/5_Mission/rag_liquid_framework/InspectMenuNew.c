@@ -16,19 +16,23 @@ modded class InspectMenuNew
 				string type;
 				bool positive;
 				string blood_type_name = BloodTypes.GetBloodTypeName(blood_container.GetLiquidType(), type, positive);
-				WidgetTrySetText(root_widget, "ItemLiquidTypeWidget", "#inv_inspect_blood: " + blood_type_name, RaG_Colors.BLOOD_FRESH);
+				WidgetTrySetText(root_widget, "ItemLiquidTypeWidget", "#inv_inspect_blood: " + blood_type_name, RaG_LF_Colors.BLOOD_FRESH);
 			}
 			else
 			{
-				WidgetTrySetText(root_widget, "ItemLiquidTypeWidget", "#inv_inspect_blood", RaG_Colors.BLOOD_FRESH);
+				WidgetTrySetText(root_widget, "ItemLiquidTypeWidget", "#inv_inspect_blood", RaG_LF_Colors.BLOOD_FRESH);
 			}
 		}
 		else if ( item_base && item_base.GetQuantity() > 0 && item_base.IsLiquidContainer() )
 		{
 			int liquid_type = item_base.GetLiquidType();
 
-			LiquidFrameworkRegistry registry = GetLiquidFrameworkRegistry();
-			LiquidDetailsBase liquid = registry.GetLiquid(liquid_type);
+			LF_LiquidFrameworkRegistry registry = LF_LiquidFrameworkRegistry.GetLiquidFrameworkRegistry();
+			
+			if ( !registry )
+				return;
+			
+			LF_LiquidDetailsBase liquid = registry.GetLiquid(liquid_type);
 			
 			if ( liquid )
 			{
