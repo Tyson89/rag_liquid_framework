@@ -42,39 +42,39 @@ class LiquidFrameworkRegistry
 		m_liquids = new map<int, ref LiquidDetailsBase>;
 		
         // Vanilla liquids
-        RegisterLiquid(LIQUID_WATER, "#inv_inspect_water", Colors.COLOR_LIQUID);
-        RegisterLiquid(LIQUID_RIVERWATER, "#inv_inspect_river_water", Colors.COLOR_LIQUID);
-        RegisterLiquid(LIQUID_VODKA, "#inv_inspect_vodka", Colors.GRAY);
-        RegisterLiquid(LIQUID_BEER, "#inv_inspect_beer", Colors.YELLOW);
-        RegisterLiquid(LIQUID_GASOLINE, "#inv_inspect_gasoline", Colors.COLOR_GASOLINE);
-        RegisterLiquid(LIQUID_DIESEL, "#inv_inspect_diesel", Colors.COLOR_GASOLINE);
-        RegisterLiquid(LIQUID_DISINFECTANT, "#inv_inspect_disinfectant", Colors.GRAY);
-        RegisterLiquid(LIQUID_SALINE, "#inv_inspect_saline", Colors.COLOR_LIQUID);
-        RegisterLiquid(LIQUID_SOLUTION, "#inv_inspect_solution", Colors.COLOR_LIQUID);
+        RegisterLiquid(LIQUID_WATER, "#inv_inspect_water", RaG_Colors.WATER);
+        RegisterLiquid(LIQUID_RIVERWATER, "#inv_inspect_river_water", RaG_Colors.RIVER_WATER);
+        RegisterLiquid(LIQUID_VODKA, "#inv_inspect_vodka", RaG_Colors.VODKA);
+        RegisterLiquid(LIQUID_BEER, "#inv_inspect_beer", RaG_Colors.BEER_AMBER);
+        RegisterLiquid(LIQUID_GASOLINE, "#inv_inspect_gasoline", RaG_Colors.GASOLINE);
+        RegisterLiquid(LIQUID_DIESEL, "#inv_inspect_diesel", RaG_Colors.DIESEL);
+        RegisterLiquid(LIQUID_DISINFECTANT, "#inv_inspect_disinfectant", RaG_Colors.DISINFECTANT);
+        RegisterLiquid(LIQUID_SALINE, "#inv_inspect_saline", RaG_Colors.SALINE);
+        RegisterLiquid(LIQUID_SOLUTION, "#inv_inspect_solution", RaG_Colors.SOLUTION);
 		
-		RegisterLiquid(LIQUID_SNOW, "SNOW", Colors.COLOR_LIQUID);
-		RegisterLiquid(LIQUID_SALTWATER, "#inv_inspect_water", Colors.COLOR_LIQUID);
-		RegisterLiquid(LIQUID_FRESHWATER, "#inv_inspect_water", Colors.COLOR_LIQUID);
-		RegisterLiquid(LIQUID_STILLWATER, "#inv_inspect_water", Colors.COLOR_LIQUID);
-		RegisterLiquid(LIQUID_HOTWATER, "#inv_inspect_water", Colors.COLOR_LIQUID);
-		RegisterLiquid(LIQUID_CLEANWATER, "#inv_inspect_water", Colors.COLOR_LIQUID);
+		RegisterLiquid(LIQUID_SNOW, "SNOW", RaG_Colors.SNOW);
+		RegisterLiquid(LIQUID_SALTWATER, "#inv_inspect_water", RaG_Colors.SALT_WATER);
+		RegisterLiquid(LIQUID_FRESHWATER, "#inv_inspect_water", RaG_Colors.WATER);
+		RegisterLiquid(LIQUID_STILLWATER, "#inv_inspect_water", RaG_Colors.WATER);
+		RegisterLiquid(LIQUID_HOTWATER, "#inv_inspect_water", RaG_Colors.HOT_WATER);
+		RegisterLiquid(LIQUID_CLEANWATER, "#inv_inspect_water", RaG_Colors.WATER);
 
         // Liquid framework introduced
-        RegisterLiquid(LIQUID_MILK, "MILK", Colors.MILKLIQUID);
-        RegisterLiquid(LIQUID_HONEY, "HONEY", Colors.HONEYLIQUID);
-        RegisterLiquid(LIQUID_HONEYWINE, "HONEYWINE", Colors.HONEYWINELIQUID);
-        RegisterLiquid(LIQUID_WINE, "WINE", Colors.WINELIQUID);
-        RegisterLiquid(LIQUID_RAGAVGAS, "AVIATION FUEL", Colors.AVGASLIQUID);
-        RegisterLiquid(LIQUID_WHISKEY, "WHISKEY", Colors.WHISKEYLIQUID);
-        RegisterLiquid(LIQUID_ESPRESSO, "SPRESSO", Colors.ESPRESSOLIQUID);
-        RegisterLiquid(LIQUID_COFFEE, "COFFEE", Colors.COFFEELIQUID);
-        RegisterLiquid(LIQUID_TEA, "TEA", Colors.TEALIQUID);
-        RegisterLiquid(LIQUID_ENGINEOIL, "ENGINEOIL", Colors.ENGINEOILLIQUID);
-        RegisterLiquid(LIQUID_ENERGYDRINK, "ENERGYDRINK", Colors.ENERGYDRINKLIQUID);
-        RegisterLiquid(LIQUID_VIRUS, "VIRUS", Colors.VIRUSLIQUID);
-        RegisterLiquid(LIQUID_POISON, "POISON", Colors.POISONLIQUID);
-        RegisterLiquid(LIQUID_MILKCOFFEE, "MILKCOFFEE", Colors.MILKCOFFEELIQUID);
-        RegisterLiquid(LIQUID_ANTIVENOM, "ANTIVENOM", Colors.ANTIVENOMLIQUID);
+        RegisterLiquid(RaG_Liquids.LIQUID_MILK, "MILK", RaG_Colors.MILK);
+        RegisterLiquid(RaG_Liquids.LIQUID_HONEY, "HONEY", RaG_Colors.HONEY);
+        RegisterLiquid(RaG_Liquids.LIQUID_HONEYWINE, "HONEYWINE", RaG_Colors.HONEYWINE);
+        RegisterLiquid(RaG_Liquids.LIQUID_WINE, "RED WINE", RaG_Colors.WINE_RED);
+        RegisterLiquid(RaG_Liquids.LIQUID_RAGAVGAS, "AVIATION FUEL", RaG_Colors.AVGAS);
+        RegisterLiquid(RaG_Liquids.LIQUID_WHISKEY, "WHISKEY", RaG_Colors.WHISKEY);
+        RegisterLiquid(RaG_Liquids.LIQUID_ESPRESSO, "SPRESSO", RaG_Colors.ESPRESSO);
+        RegisterLiquid(RaG_Liquids.LIQUID_COFFEE, "COFFEE", RaG_Colors.COFFEE);
+        RegisterLiquid(RaG_Liquids.LIQUID_TEA, "TEA", RaG_Colors.TEA);
+        RegisterLiquid(RaG_Liquids.LIQUID_ENGINEOIL, "MOTOR OIL", RaG_Colors.MOTOR_OIL);
+        RegisterLiquid(RaG_Liquids.LIQUID_ENERGYDRINK, "ENERGYDRINK", RaG_Colors.ENERGYDRINK);
+        RegisterLiquid(RaG_Liquids.LIQUID_VIRUS, "VIRUS", RaG_Colors.VIRUS);
+        RegisterLiquid(RaG_Liquids.LIQUID_POISON, "POISON", RaG_Colors.POISON);
+        RegisterLiquid(RaG_Liquids.LIQUID_MILKCOFFEE, "MILKCOFFEE", RaG_Colors.MILKCOFFEE);
+        RegisterLiquid(RaG_Liquids.LIQUID_ANTIVENOM, "ANTIVENOM", RaG_Colors.ANTIVENOM);
 		
 		RegisterCustomLiquids();
     }

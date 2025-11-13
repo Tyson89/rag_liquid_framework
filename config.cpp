@@ -57,7 +57,7 @@ class CfgMods
 		};
 	};
 };
-class cfgLiquidDefinitions
+class CfgLiquidDefinitions
 {
 	class MilkLiquid
 	{
@@ -111,10 +111,28 @@ class cfgLiquidDefinitions
 			digestibility=2;
 		};
 	};
-	class WineLiquid
+	class RedWineLiquid
 	{
 		type=603;
-		displayName="Wine";
+		displayName="Red Wine";
+		flammability=5;
+		liquidFreezeThreshold=0;
+		liquidThawThreshold=0;
+		liquidBoilingThreshold=150;
+		class Nutrition
+		{
+			fullnessIndex=1;
+			energy=0;
+			water=80;
+			nutritionalIndex=75;
+			toxicity=-0.0;
+			digestibility=2;
+		};
+	};
+	class WhiteWineLiquid
+	{
+		type=604;
+		displayName="White Wine";
 		flammability=5;
 		liquidFreezeThreshold=0;
 		liquidThawThreshold=0;
@@ -131,7 +149,7 @@ class cfgLiquidDefinitions
 	};
 	class AVGasLiquid
 	{
-		type=604;
+		type=605;
 		displayName="AVGas Aviation Fuel";
 		flammability=60;
 		liquidBoilingThreshold=999;
@@ -148,7 +166,7 @@ class cfgLiquidDefinitions
 	};
 	class WhiskeyLiquid
 	{
-		type=605;
+		type=606;
 		displayName="Whiskey";
 		flammability=30;
 		liquidBoilingThreshold=150;
@@ -164,7 +182,7 @@ class cfgLiquidDefinitions
 	};
 	class EspressoLiquid
 	{
-		type=606;
+		type=607;
 		displayName="Espresso";
 		flammability=-10;
 		liquidFreezeThreshold=0;
@@ -182,7 +200,7 @@ class cfgLiquidDefinitions
 	};
 	class CoffeeLiquid
 	{
-		type=607;
+		type=608;
 		displayName="Coffee";
 		flammability=-10;
 		liquidFreezeThreshold=0;
@@ -200,7 +218,7 @@ class cfgLiquidDefinitions
 	};
 	class TeaLiquid
 	{
-		type=608;
+		type=609;
 		displayName="Tea";
 		flammability=-10;
 		liquidFreezeThreshold=0;
@@ -216,10 +234,10 @@ class cfgLiquidDefinitions
 			digestibility=2;
 		};
 	};
-	class EngineOilLiquid
+	class MotorOilLiquid
 	{
-		type=609;
-		displayName="Engine Oil";
+		type=610;
+		displayName="Motor Oil";
 		flammability=50;
 		liquidBoilingThreshold=999;
 		class Nutrition
@@ -235,7 +253,7 @@ class cfgLiquidDefinitions
 	};
 	class EnergyDrink
 	{
-		type=610;
+		type=611;
 		displayName="Energy Drink";
 		flammability=-10;
 		liquidFreezeThreshold=0;
@@ -253,7 +271,7 @@ class cfgLiquidDefinitions
 	};
 	class Virus
 	{
-		type=611;
+		type=612;
 		displayName="Virus";
 		flammability=-10;
 		liquidBoilingThreshold=999;
@@ -269,7 +287,7 @@ class cfgLiquidDefinitions
 	};
 	class PoisonLiquid
 	{
-		type=612;
+		type=613;
 		displayName="Poison";
 		flammability=-10;
 		liquidBoilingThreshold=999;
@@ -285,7 +303,7 @@ class cfgLiquidDefinitions
 	};
 	class MilkCoffeeLiquid
 	{
-		type=613;
+		type=614;
 		displayName="Milk Coffee";
 		flammability=-10;
 		liquidFreezeThreshold=0;
@@ -303,7 +321,7 @@ class cfgLiquidDefinitions
 	};
 	class AntivenomLiquid
 	{
-		type=614;
+		type=615;
 		displayName="Antivenom";
 		flammability=-10;
 		liquidBoilingThreshold=999;
@@ -315,6 +333,91 @@ class cfgLiquidDefinitions
 			nutritionalIndex=75;
 			toxicity=0.1;
 			digestibility=2;
+		};
+	};
+	class CoolantLiquid
+	{
+		type=616;
+		displayName="Coolant";
+		flammability=-10;
+		liquidBoilingThreshold=999;
+		class Nutrition
+		{
+			fullnessIndex=1;
+			energy=-10;
+			water=0;
+			nutritionalIndex=75;
+			toxicity=1;
+			digestibility=2;
+			agents=16;
+		};
+	};
+	class BrakeFluidLiquid
+	{
+		type=617;
+		displayName="BrakeFluid";
+		flammability=30;
+		liquidBoilingThreshold=150;
+		class Nutrition
+		{
+			fullnessIndex=1;
+			energy=-10;
+			water=0;
+			nutritionalIndex=75;
+			toxicity=1;
+			digestibility=2;
+			agents=16;
+		};
+	};
+	class HydraulicFluidLiquid
+	{
+		type=618;
+		displayName="HydraulicFluid";
+		flammability=30;
+		liquidBoilingThreshold=150;
+		class Nutrition
+		{
+			fullnessIndex=1;
+			energy=-10;
+			water=0;
+			nutritionalIndex=75;
+			toxicity=1;
+			digestibility=2;
+			agents=16;
+		};
+	};
+	class CookingOilLiquid
+	{
+		type=619;
+		displayName="CookingOil";
+		flammability=10;
+		liquidBoilingThreshold=150;
+		class Nutrition
+		{
+			fullnessIndex=1;
+			energy=-10;
+			water=0;
+			nutritionalIndex=75;
+			toxicity=1;
+			digestibility=2;
+			agents=16;
+		};
+	};
+	class VinegarLiquid
+	{
+		type=620;
+		displayName="Vinegar";
+		flammability=-10;
+		liquidBoilingThreshold=150;
+		class Nutrition
+		{
+			fullnessIndex=1;
+			energy=-10;
+			water=-10;
+			nutritionalIndex=75;
+			toxicity=0;
+			digestibility=2;
+			agents=16;
 		};
 	};
 };

@@ -1,6 +1,7 @@
 modded class Colors
 {
-	/*const int RED					= 0xFF0000;
+	/*
+	const int RED					= 0xFF0000;
 	const int CYAN					= 0x00FFFF;
 	const int GRAY					= 0xBEBEBE;
 	const int GREEN					= 0x00FF00;
@@ -61,24 +62,24 @@ modded class Colors
 	
 	const int COLOR_FROSTLINE_LIGHT_BLUE = 0xff90b2bf;
 	const int COLOR_FROSTLINE_MOUNTAIN_BLUE = 0xff365d6e;
-	const int COLOR_FROSTLINE_DARK_BLUE = 0xff0d1c21;*/
+	const int COLOR_FROSTLINE_DARK_BLUE = 0xff0d1c21;	
+	*/
 	
 	// Custom added
 	const int COLOR_GASOLINE		= 0xE6E6B9;
-	
-	const int MILKLIQUID			= 0xFFFFFF;
-	const int HONEYLIQUID			= 0xFFA500;
-	const int HONEYWINELIQUID		= 0xFFA500;
-	const int WINELIQUID			= 0xFF0000;
-	const int AVGASLIQUID			= 0xFFFFE5;
-	const int WHISKEYLIQUID			= 0xC59B19;
-	const int ESPRESSOLIQUID		= 0x352800;
-	const int COFFEELIQUID			= 0x4C3900;
-	const int TEALIQUID				= 0xCCFF99;
-	const int ENGINEOILLIQUID		= 0xFFA500;
-	const int ENERGYDRINKLIQUID		= 0x00FF00;
-	const int VIRUSLIQUID			= 0xA020F0;
-	const int POISONLIQUID			= 0xA020F0;
-	const int MILKCOFFEELIQUID		= 0xB99752;
-	const int ANTIVENOMLIQUID		= 0x00FF1A;
+	const int COLOR_MILK			= 0xFFFFFF;
+	const int COLOR_HONEY			= 0xFFA500;
+	const int COLOR_HONEYWINE		= 0xFFA500;
+	const int COLOR_WINE			= 0xFF0000;
+	const int COLOR_AVGAS			= 0xFFFFE5;
+	const int COLOR_WHISKEY			= 0xC59B19;
+	const int COLOR_ESPRESSO		= 0x352800;
+	const int COLOR_COFFEE			= 0x4C3900;
+	const int COLOR_TEA				= 0xCCFF99;
+	const int COLOR_ENGINEOIL		= 0xFFA500;
+	const int COLOR_ENERGYDRINK		= 0x00FF00;
+	const int COLOR_VIRUS			= 0xA020F0;
+	const int COLOR_POISON			= 0xA020F0;
+	const int COLOR_MILKCOFFEE		= 0xB99752;
+	const int COLOR_ANTIVENOM		= 0x00FF1A;
 };

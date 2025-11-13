@@ -9,7 +9,7 @@ modded class CAContinuousQuantityLiquidTransfer
 			//Print("[RaG_Liquid_Framework] CAContinuousQuantityLiquidTransfer:: CalcAndSetQuantity:: Liquid is NOT power of 2");
 			m_SpentQuantity_total += m_SpentQuantity;
 			
-			if (GetGame().IsServer())
+			if (g_Game.IsServer())
 			{
 				if (m_SpentUnits)
 				{
